@@ -15,7 +15,6 @@ $(document).ready(function(){
       $('button.logo-button').css('background-image', "url('../images/temp-watch-white.gif')")
     }
   });
-
 });
 
 
@@ -23,56 +22,74 @@ $("#services").click(function(e) {
   e.preventDefault();
   $('html,body').animate({
     scrollTop: $("#services-div").offset().top},
-    'slow')
+    1500)
   });
   $( "#services-btn").click(function(e) {
     e.preventDefault();
     $('html,body').animate({
       scrollTop: $("#services-div").offset().top},
-      'slow')
+      1500)
     });
     $("#applications").click(function(e) {
       e.preventDefault();
       $('html,body').animate({
         scrollTop: $("#applications-div").offset().top},
-        'slow')
+        1500)
       });
       $("#contact-us").click(function(e) {
         e.preventDefault();
         $('html,body').animate({
           scrollTop: $("#contact-us-div").offset().top},
-          'slow')
+          1500)
         });
-        $(".logo-button").click(function(e) {
+        $( "#services-btn-dd").click(function(e) {
           e.preventDefault();
           $('html,body').animate({
-            scrollTop: $("header").offset().top},
-            'slow')
+            scrollTop: $("#services-div").offset().top},
+            1500)
           });
+          $("#applications-dd").click(function(e) {
+            e.preventDefault();
+            $('html,body').animate({
+              scrollTop: $("#applications-div").offset().top},
+              1500)
+            });
+            $("#contact-us-dd").click(function(e) {
+              e.preventDefault();
+              $('html,body').animate({
+                scrollTop: $("#contact-us-div").offset().top},
+                1500)
+              });
+              $(".logo-button").click(function(e) {
+                e.preventDefault();
+                $('html,body').animate({
+                  scrollTop: $("header").offset().top},
+                  1500)
+                });
 
-          var product = $('.our-services').offset().top;
-          var application = $('.applications').offset().top;
-          var contact = $('.contact-us').offset().top;
+                var product = $('.our-services').offset().top;
+                var application = $('.applications').offset().top;
+                var contact = $('.contact-us').offset().top;
 
-          $(window).on('scroll',function(){
-            var stop = Math.round($(window).scrollTop()+1);
-            if (stop > product) {
-              $('.product-li').addClass('active');
-            } else {
-              $('.product-li').removeClass('active');
-            }
+                $(window).on('scroll',function(){
+                  var stop = Math.round($(window).scrollTop()+1);
+                  if (stop > product) {
+                    $('.product-li').addClass('active');
+                  } else {
+                    $('.product-li').removeClass('active');
+                  }
 
-            if (stop > application) {
-              $('.product-li').removeClass('active');
-              $('.application-li').addClass('active');
-            } else {
-              $('.application-li').removeClass('active');
-            }
+                  if (stop > application) {
+                    $('.product-li').removeClass('active');
+                    $('.application-li').addClass('active');
+                  } else {
+                    $('.application-li').removeClass('active');
+                  }
 
-            if (stop > ((contact - product)/1)) {
-              $('.application-li').removeClass('active');
-              $('.contact-li').addClass('active');
-            } else {
-              $('.contact-li').removeClass('active');
-            }
-          });
+                  if (stop > ((contact - product))) {
+                    $('.application-li').removeClass('active');
+                    $('.contact-li').addClass('active');
+                  } else {
+                    $('.contact-li').removeClass('active');
+                  }
+                });

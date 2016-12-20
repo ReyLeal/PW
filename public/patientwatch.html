@@ -19,9 +19,17 @@
       </div>
       <div class= "navbar-collapse" data-toggle="collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a class='product-li' id="services-btn" href="#">Product</a></li>
-          <li><a class='application-li' id="applications" href="#">Applications</a></li>
-          <li><a class='contact-li' id="contact-us" href="#">Contact Us</a></li>
+          <li class='li-disp-none'><a class='product-li ' id="services-btn" href="#">Product</a></li>
+          <li class='li-disp-none'><a class='application-li ' id="applications" href="#">Applications</a></li>
+          <li class='li-disp-none'><a class='contact-li ' id="contact-us" href="#">Contact Us</a></li>
+          <li class ='disp-none'><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu">
+              <li ><a class='product-li ' id="services-btn-dd" href="#">Product</a></li>
+              <li ><a class='application-li ' id="applications-dd" href="#">Applications</a></li>
+              <li ><a class='contact-li ' id="contact-us-dd" href="#">Contact Us</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -83,51 +91,93 @@
     </div>
   </div>
   <div class="applications" id="applications-div">
-    <h1>Applications</h2>
-      <p>
-        The many ways that PatientWatch can benefit your hospital
-      </p>
-      <div class="container photos-container">
-        <div>
-          <div class="col-md-4 col-sm-6 photo-square">
-            <div class="app-photos"></div>
-          </div>
-          <div class="col-md-4 col-sm-6 photo-square">
-            <div class="app-photos"></div>
-          </div>
-          <div class="col-md-4 col-sm-6 last photo-square">
-            <div class="app-photos"></div>
+    <div class="container">
+      <h1>Applications</h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 photo-square">
+          <a id="a-id" href="#">
+            <div class="image-div">
+              <img src="http://placekitten.com/g/210/240" alt="" />
+            </div>
+          </a>
+          <div class="info-square">
+            <h4>placeholder</h4>
+
           </div>
         </div>
-        <div>
-          <div class="col-md-4 col-sm-6 photo-square">
-            <div class="app-photos"></div>
+        <div class="col-sm-6 col-md-4 photo-square">
+          <a id="a-id" href="#">
+            <div class="image-div">
+              <img src="http://placekitten.com/g/210/240" alt="" />
+            </div>
+          </a>
+          <div class="info-square">
+            <h4>placeholder</h4>
           </div>
-          <div class="col-md-4 col-sm-6 photo-square">
-            <div class="app-photos"></div>
+        </div>
+        <div class=" col-sm-6 col-md-4 photo-square">
+          <a id="a-id" href="#">
+            <div class="image-div">
+              <img src="http://placekitten.com/g/210/240" alt="" />
+            </div>
+
+          </a>
+          <div class="info-square">
+            <h4>placeholder</h4>
           </div>
-          <div class="col-md-4 col-sm-6 last photo-square">
-            <div class="app-photos"></div>
+        </div>
+        <div class=" col-sm-6 col-md-4 photo-square">
+          <a id="a-id" href="#">
+            <div class="image-div">
+              <img src="http://placekitten.com/g/210/240" alt="" />
+            </div>
+          </a>
+          <div class="info-square">
+            <h4>placeholder</h4>
           </div>
+        </div>
+        <div class="col-sm-6 col-md-4  photo-square">
+          <a id="a-id" href="#">
+            <div class="image-div">
+              <img src="http://placekitten.com/g/210/240" alt="" />
+            </div>
+          </a>
+          <div class="info-square">
+            <h4>placeholder</h4>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 photo-square">
+          <a id="a-id" href="#">
+            <div class="image-div">
+              <img src="http://placekitten.com/g/210/240" alt="" />
+            </div>
+          </a>
+          <div class="info-square">
+            <h4>placeholder</h4>
+          </div>
+
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div class="contact-us" id="contact-us-div">
-      <h1>Contact Us</h1>
-      <p>
-        Please feel free to reach us with any questions!
-      </p>
-    </div>
 
-    <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-    <script src="./style/style.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-  </body>
-  </html>
+  <div class="contact-us" id="contact-us-div">
+    <h1>Contact Us</h1>
+    <p>
+      Please feel free to reach us with any questions!
+    </p>
+  </div>
+
+  <script src="https://use.fontawesome.com/c365aaf3c5.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="./style/style.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+</body>
+</html>

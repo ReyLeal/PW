@@ -6,6 +6,18 @@ body
   color: #424242;
 }
 /* NAVBAR *************************************************************************/
+.navbar-collapse {
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0);
+}
+.open {
+  text-align: right!important;
+}
+.nav>li>a.dropdown-toggle:focus, .nav>li>a.dropdown-toggle:hover {
+  background-color: transparent!important;
+}
+li.disp-none {
+  display: none;
+}
 div.logo-float
 {
   float: left;
@@ -217,12 +229,12 @@ h2.services-header {
 }
 /* APPLICATIONS *************************************************************************/
 .applications {
-  min-height: 50rem;
+  min-height: 100rem;
   background-color: #E0E0E0;
   margin: 0 auto;
   padding-top: 5rem;
 }
-.applications>h1 {
+.applications>div>h1 {
   text-align: center;
   font-weight: 700;
   font-size: 4.5rem;
@@ -236,20 +248,44 @@ h2.services-header {
   color: rgba(113,113,113,.75);
   font-style: italic;
 }
+/*.col-centered {
+display:inline-block;
+float:none;
+text-align:left;
+margin-right:-4px;
+}*/
 
 .photo-square {
-  height: 40rem;
-  min-width: 342px;
-  width: 342px;
-  background-color: white;
-  margin: 2rem;
+  min-height: 100%;
+  width: 33.3333%;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 8px;
+  /*position: relative;*/
+  margin: 0 auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  border-radius: 8px;
 }
-.last {
-  margin-right: 0;
+#a-id {
+  max-width: 300px;
 }
+.info-square {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  max-width: 300px;
+}
+.image-div {
+  max-width: 300px;
+}
+img {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 100%;
+}
+
 
 /* CONTACT US************************************************************************/
 
@@ -296,5 +332,48 @@ h2.services-header {
     background-size: 1000px;
     height: auto;
     min-height: 50rem;
+  }
+  .container.nav-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media only screen and (max-width: 700px){
+  .cta-header-div {
+    width: 30rem;
+  }
+  .cta-header-div>h1 {
+    font-size: 4.5rem;
+  }
+  .cta-header-div>h3 {
+    font-size: 2rem;
+  }
+  button#services {
+    width: 15rem;
+    height: 6rem;
+    font-size: 2rem;
+  }
+  .photo-square {
+    width: 280px;
+  }
+  li.li-disp-none {
+    display: none;
+  }
+  li.disp-none {
+    display: inline-block;
+    margin-bottom: .3rem;
+  }
+  .container.nav-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  ul.dropdown-menu {
+    background-color: white!important;
+  }
+  nav.navbar.navbar-fix-top {
+    height: 7rem;
+  }
+  button.logo-button {
+    margin-top: .9rem;
   }
 }
