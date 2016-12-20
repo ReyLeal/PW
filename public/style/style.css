@@ -1,0 +1,254 @@
+body
+{
+  height: 100%;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #424242;
+}
+/* NAVBAR *************************************************************************/
+div.logo-float
+{
+  float: left;
+}
+li:active {
+  text-decoration: none;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: transparent;
+  border: none;
+}
+.nav>li>a:focus, .nav>li>a:active {
+  color: rgb(3,200,235);
+}
+.active {
+  background-color: rgb(3,160,235)!important;
+  border-radius: 12px;
+  height: 4rem;
+  color: white!important;
+}
+.logo-button:active{
+  background-color: transparent;
+}
+nav.navbar.navbar-fix-top
+{
+  padding-top: 1.5rem;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0;
+}
+button.logo-button
+{
+  background-image: url('../images/temp-watch-white.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 5.5rem;
+  width: 13rem;
+  background-color: transparent;
+  border: none;
+}
+ul
+{
+  text-decoration: none;
+  list-style: none;
+}
+.navbar-right
+{
+  float: right!important;
+}
+.navbar-nav>li
+{
+  float: left;
+  margin-left: 1.5rem;
+}
+.nav-container {
+  padding: 1rem 0rem;
+}
+.nav>li
+{
+  position: relative;
+}
+.nav>li>a {
+  padding: .75rem 1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+.nav>li>a:hover
+{
+  background-color: transparent!important;
+  color: rgb(3,160,235)!important;
+}
+/* HEAER *************************************************************************/
+
+header {
+  background-image: url('../images/header-background.jpg');
+  height: 80vh;
+  min-width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -5rem;
+  box-shadow: 0px 3px 8px -1px;
+  background-size: 100vw;
+}
+.cta-header-div {
+  color: white;
+  text-align: center;
+  width: 45rem;
+  margin: 0 auto;
+  margin-top: 18rem;
+  left: 20rem;
+}
+.cta-header-div>h1 {
+  font-size: 7rem;
+  font-weight: 700;
+}
+.cta-header-div>h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.cta-header-div>button {
+  background-color: rgb(3,160,235);
+  border: none;
+  height: 6rem;
+  width: 20rem;
+  border-radius: 6px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.cta-header-div>button:hover {
+  background-color: rgb(3,193,235);
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+button:active {
+  background-color: rgb(3,200,235);
+}
+
+
+/* SERVICES *************************************************************************/
+
+h2.services-header {
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 6rem;
+  color: #424242;
+}
+.our-services>.header-p {
+  margin: 0 auto;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 6rem;
+  color: rgba(113,113,113,.75);
+}
+.services-icons>div {
+  text-align: center;
+  margin: 0 auto;
+}
+.our-services {
+  padding-bottom: 7rem;
+}
+.circle-icon-check {
+  height: 10rem;
+  width: auto;
+  content: url('../images/check.png');
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.circle-icon-heart {
+  height: 10rem;
+  width: auto;
+  content: url('../images/heartbeat.png');
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.circle-icon-transmit {
+  height: 10rem;
+  width: auto;
+  content: url('../images/transmit.png');
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.col-md-4 {
+  position: inherit;
+}
+.services-fa-heart {
+  position: relative;
+  top: 2.45rem;
+  left: 0.07rem;
+}
+.services-fa-rss {
+  position: relative;
+  top: 2.2rem;
+  left: .6rem;
+}
+.services-fa-check {
+  position: relative;
+  top: 2.2rem;
+  left: .4rem;
+}
+.information>div {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 35rem;
+}
+.information>div>h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.information>div>p {
+  opacity: 1;
+  font-weight: 700;
+  color: rgba(66,66,66,.75);
+}
+/* APPLICATIONS *************************************************************************/
+.applications {
+  height: 50rem;
+  background-color: #E0E0E0;
+}
+
+/* CONTACT US************************************************************************/
+
+.contact-us {
+  height: 50rem;
+}
+
+/* MEDIA************************************************************************/
+@media only screen and (max-width: 1300px) {
+  header {
+    height: auto;
+    min-height: 70vh;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  header {
+    height: auto;
+    min-height: 60vh;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    background-size: 1000px;
+    height: auto;
+    min-height: 50rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header {
+    background-position-x: -12rem;
+    background-size: 1000px;
+    height: auto;
+    min-height: 50rem;
+  }
+}

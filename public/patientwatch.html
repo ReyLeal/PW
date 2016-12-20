@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PatientWatch ⌚️</title>
+  <title>PatientWatch</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/temp-watch-tab.gif" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-
   <nav class="navbar navbar-fix-top">
-    <div class='navbar-header logo-div logo-float'>
-      <button class='logo-button'></button>
-    </div>
-    <div class="navbar-collapse" data-toggle="collapse">
-      <ul>
-        <li>Our Services</li>
-        <li>About Us</li>
-        <li>Our Team</li>
-        <li>Contact Us</li>
-      </ul>
+    <div class="container nav-container">
+      <div class='navbar-header logo-div logo-float'>
+        <button class='logo-button'></button>
+      </div>
+      <div class= "navbar-collapse" data-toggle="collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class='product-li' id="services-btn" href="#">Product</a></li>
+          <li><a class='application-li' id="applications" href="#">Applications</a></li>
+          <li><a class='contact-li' id="contact-us" href="#">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <header>
-    <div>
-      <div>
-        <button>
+    <div class="container head-container">
+      <div class='cta-header-div'>
+        <h1 id="startchange">PatientWatch</h1>
+        <h3>Help is just a click away</h3>
+        <button id="services">
+          Our Product
         </button>
       </div>
     </div>
   </header>
 
-  <div class="containter">
-
-    <div class="our-services">
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+  <div class="our-services container" id="services-div">
+    <h2 class="services-header">Our Product</h2>
+    <p class="header-p">
+      Patient watch improves your patients experience in just 3 easy steps
+    </p>
+    <div class="containter">
+      <div class="services-icons">
+        <div class="col-md-4 information">
+          <div class="circle-icon-heart">
+          </div>
+          <div>
+            <h1>Request</h1>
+            <p>
+              Patients are given a pager that lets them request assistance from their nurse.Lorem ipsum dolor sit amet,
+              labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 information">
+          <div class="circle-icon-transmit">
+          </div>
+          <div>
+            <h1>Transmit</h1>
+            <p>
+              The request is then transmitted to the patients nurse via the PatientWatch.Lorem ipsum dolor sit amet,
+              labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 information">
+          <div class="circle-icon-check">
+          </div>
+          <div>
+            <h1>Receive</h1>
+            <p>
+              The nurse then recieves the page on their PatientWatch and responds to the request as soon as they can.Lorem ipsum,
+              labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="about-us">
-      <div>
-        <div></div>
-      </div>
+  </div>
+  <div class="applications" id="applications-div">
+    <div>
+      <div>Here is where we would have photos of applications</div>
     </div>
-    <div class="our-team">
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+  </div>
+  <div class="our-team">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-
-    <div class="contact-us">
-    </div>
-
   </div>
 
+  <div class="contact-us" id="contact-us-div">
+  </div>
 
-  <script src="./style/style.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+  <script src="./style/style.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
   crossorigin="anonymous"></script>
