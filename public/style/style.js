@@ -50,12 +50,12 @@ $("#services").click(function(e) {
             'slow')
           });
 
-          var product = $('.our-services').offset().top - 1;
-          var application = $('.applications').offset().top - 1;
-          var contact = $('.contact-us').offset().top - 1;
+          var product = $('.our-services').offset().top;
+          var application = $('.applications').offset().top;
+          var contact = $('.contact-us').offset().top;
 
           $(window).on('scroll',function(){
-            var stop = Math.round($(window).scrollTop());
+            var stop = Math.round($(window).scrollTop()+1);
             if (stop > product) {
               $('.product-li').addClass('active');
             } else {
@@ -69,7 +69,7 @@ $("#services").click(function(e) {
               $('.application-li').removeClass('active');
             }
 
-            if (stop > contact) {
+            if (stop > ((contact - product)/1)) {
               $('.application-li').removeClass('active');
               $('.contact-li').addClass('active');
             } else {
