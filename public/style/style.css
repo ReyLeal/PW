@@ -6,11 +6,11 @@ body
   color: #424242;
 }
 hr {
-    margin-top: 0;
-    margin-bottom: -4px;
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.79);
-    width: 30rem;
+  margin-top: 0;
+  margin-bottom: -4px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.79);
+  width: 30rem;
 }
 .bottom-line {
   margin-bottom: 3rem;
@@ -244,6 +244,22 @@ h2.services-header {
   margin: 0 auto;
   padding-top: 5rem;
 }
+.btn-primary {
+  color: transparent;
+  background-color: transparent;;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+  outline: none;
+}
+
+button.btn.btn-primary {
+  padding: 0;
+}
 .applications>div>h1 {
   text-align: center;
   font-weight: 700;
@@ -383,7 +399,27 @@ span i.fa {
   color: rgba(113,113,113,1);
   font-size: 110%;
 }
-
+/*MODAL*****************************************************************************/
+.modal-dialog.modal-lg {
+  width: 50vw;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.modal-content {
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  width: 100%;
+}
+.modal-content>h3 {
+  text-align: center;
+}
+.modal-content>p {
+  padding: 2rem;
+  text-align: center;
+}
+.modal-image {
+  width: 100%;
+}
 /* MEDIA************************************************************************/
 @media only screen and (max-width: 1300px) {
   header {
@@ -430,6 +466,10 @@ span i.fa {
   .our-services {
     padding-top: 4.5rem;
     padding-bottom: 9rem;
+  }
+  .modal-dialog.modal-lg {
+    width: 75vw;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 700px){
@@ -500,6 +540,13 @@ span i.fa {
   .flex-info {
     margin-bottom: 5rem;
   }
+  h2.services-header {
+    margin-top: 4rem;
+  }
+  .applications>div>h1 {
+    margin-top: 3rem;
+  }
+
   header {
     height: 100vh;
     background-position-x: -34rem;
@@ -507,9 +554,9 @@ span i.fa {
     /* height: auto; */
     min-height: 50rem;
     background-position-y: 0rem;
+  }
 }
-  }
-  .contact-us {
-    padding-top: 7rem;
-  }
+.contact-us {
+  padding-top: 7rem;
+}
 }
