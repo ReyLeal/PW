@@ -1,6 +1,18 @@
 
 $(document).ready(function(){
   var offset = $('header').offset().top ;
+  var stop = Math.round($(window).scrollTop());
+  if(stop > offset) {
+    $('nav.navbar.navbar-fix-top').css('background-color', '#f0f0f0');
+    $('nav.navbar.navbar-fix-top').css('padding-top', '0');
+    $('.nav>li>a').css('color', '#424242', 'important');
+    $('button.logo-button').css('background-image', "url('../images/temp-watch-black-long.gif')")
+  } else {
+    $('nav.navbar.navbar-fix-top').css('background-color', 'transparent');
+    $('.nav>li>a').css('color', 'white', 'important');
+    $('nav.navbar.navbar-fix-top').css('padding-top', '1.5rem');
+    $('button.logo-button').css('background-image', "url('../images/temp-watch-white.gif')")
+  }
   $(window).on('scroll', function() {
     var stop = Math.round($(window).scrollTop());
     if(stop > offset) {

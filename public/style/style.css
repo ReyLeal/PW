@@ -171,7 +171,7 @@ h2.services-header {
   margin: 0 auto;
   font-style: italic;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 4.5rem;
   color: rgba(113,113,113,.75);
 }
 .services-icons>div {
@@ -406,14 +406,30 @@ span i.fa {
 }
 @media only screen and (max-width: 800px) {
   header {
-    background-position-x: -12rem;
-    background-size: 1000px;
-    height: auto;
+    background-position-x: -25rem;
+    background-position-y: 0rem;
+    background-size: 1500px;
+    height: 82vh;
     min-height: 50rem;
   }
   .container.nav-container {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  .email-form {
+    border-right: none;
+    border-bottom: 1px solid rgba(16,16,16,0.3);
+  }
+  .email-form.col-md-6 {
+    margin-bottom: 0;
+  }
+  .flex-info {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .our-services {
+    padding-top: 4.5rem;
+    padding-bottom: 9rem;
   }
 }
 @media only screen and (max-width: 700px){
@@ -477,5 +493,23 @@ span i.fa {
   }
   button.logo-button {
     margin-top: .9rem;
+  }
+  .active {
+    height: 3rem;
+  }
+  .flex-info {
+    margin-bottom: 5rem;
+  }
+  header {
+    height: 100vh;
+    background-position-x: -34rem;
+    background-size: 1500px;
+    /* height: auto; */
+    min-height: 50rem;
+    background-position-y: 0rem;
+}
+  }
+  .contact-us {
+    padding-top: 7rem;
   }
 }
