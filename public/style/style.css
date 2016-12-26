@@ -19,6 +19,9 @@ hr {
 .navbar-collapse {
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0);
 }
+.dropdown-menu {
+  background-color: rgb(240, 240, 240)!important;
+}
 .open {
   text-align: right!important;
 }
@@ -104,8 +107,25 @@ a {
 }
 .nav>li>a:hover
 {
-  background-color: transparent!important;
+  background-color: transparent;
+}
+a#services-btn:hover {
   color: rgb(3,160,235)!important;
+}
+a#applications:hover {
+  color: rgb(3,160,235)!important;
+}
+a#contact-us:hover {
+  color: rgb(3,160,235)!important;
+}
+a.active#contact-us {
+  color: white!important;
+}
+a.active#applications {
+  color: white!important;
+}
+a.active#services-btn {
+  color: white!important;
 }
 /* HEAER *************************************************************************/
 
@@ -441,6 +461,30 @@ span i.fa {
   }
 }
 @media only screen and (max-width: 800px) {
+  .email-form.col-md-6 {
+    position: inherit;
+  }
+  .navbar-nav {
+    margin: .5px -15px;
+  }
+  a#services-btn:hover {
+    color: inherit!important;
+  }
+  a#applications:hover {
+    color: inherit!important;
+  }
+  a#contact-us:hover {
+    color: inherit!important;
+  }
+  a.active#services-btn:hover {
+    color: white!important;
+  }
+  a.active#applications:hover {
+    color: white!important;
+  }
+  a.active#contact-us:hover {
+    color: white!important;
+  }
   header {
     background-position-x: -25rem;
     background-position-y: 0rem;
@@ -525,9 +569,7 @@ span i.fa {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  ul.dropdown-menu {
-    background-color: white!important;
-  }
+
   nav.navbar.navbar-fix-top {
     height: 7rem;
   }
