@@ -267,6 +267,7 @@ h2.services-header {
   box-shadow: 0px 0px 10px -1px;
   margin: 0 auto;
   padding-top: 5rem;
+  background-position: center;
 }
 .applications h1 {
   color: white;
@@ -464,6 +465,12 @@ span i.fa {
     height: auto;
     min-height: 60vh;
   }
+  .applications h1 {
+    font-size: 7rem;
+  }
+  .applications {
+    background-position: center;
+  }
 }
 @media only screen and (max-width: 1000px) {
   header {
@@ -477,6 +484,13 @@ span i.fa {
     margin: 0 auto;
     margin-top: 20rem;
     text-align: center;
+  }
+  .applications h1 {
+    font-size: 6rem;
+  }
+  .applications {
+    background-size: 2100px;
+    background-position: center;
   }
   .email-form.col-md-6 {
     position: inherit;
