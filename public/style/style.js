@@ -42,12 +42,6 @@ $("#services").click(function(e) {
       scrollTop: $("#services-div").offset().top},
       1500)
     });
-    $("#applications").click(function(e) {
-      e.preventDefault();
-      $('html,body').animate({
-        scrollTop: $("#applications-div").offset().top},
-        1500)
-      });
       $("#contact-us").click(function(e) {
         e.preventDefault();
         $('html,body').animate({
@@ -60,12 +54,6 @@ $("#services").click(function(e) {
             scrollTop: $("#services-div").offset().top},
             1500)
           });
-          $("#applications-dd").click(function(e) {
-            e.preventDefault();
-            $('html,body').animate({
-              scrollTop: $("#applications-div").offset().top},
-              1500)
-            });
             $("#contact-us-dd").click(function(e) {
               e.preventDefault();
               $('html,body').animate({
@@ -91,12 +79,7 @@ $("#services").click(function(e) {
                     $('.product-li').removeClass('active');
                   }
 
-                  if (stop > application) {
-                    $('.product-li').removeClass('active');
-                    $('.application-li').addClass('active');
-                  } else {
-                    $('.application-li').removeClass('active');
-                  }
+
 
                   if (stop > ((contact - product))) {
                     $('.application-li').removeClass('active');

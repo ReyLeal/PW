@@ -142,9 +142,7 @@ header {
 }
 .cta-header-div {
   color: white;
-  text-align: center;
-  width: 45rem;
-  margin: 0 auto;
+  text-align: right;
   margin-top: 18rem;
   left: 20rem;
 }
@@ -259,10 +257,21 @@ h2.services-header {
 }
 /* APPLICATIONS *************************************************************************/
 .applications {
-  min-height: 100rem;
-  background-color: #E0E0E0;
+  background-image: url('../images/water.jpg');
+  background-size: cover;
+  min-height: 50rem;
+  background-attachment: fixed;
+  /*background-color: #E0E0E0;*/
   margin: 0 auto;
   padding-top: 5rem;
+}
+.applications h1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 7rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-top: 15rem
 }
 .btn-primary {
   color: transparent;
@@ -407,7 +416,7 @@ form {
 .contact-deets>h3{
   text-align: center;
 }
-.col-md-4 span {
+.col-md-6 span {
   font-size: 2.5rem;
   margin-right: 1rem;
   margin-bottom: 5rem;
@@ -461,6 +470,9 @@ span i.fa {
   }
 }
 @media only screen and (max-width: 800px) {
+  .cta-header-div {
+    margin: 0 auto;
+  }
   .email-form.col-md-6 {
     position: inherit;
   }
