@@ -36,42 +36,42 @@ $(document).ready(function(){
     $('html,body').animate({
       scrollTop: $("#services-div").offset().top
     },
-    1500)
+    2500)
   });
   $( "#services-btn").click(function(e) {
     e.preventDefault();
     $('html,body').animate({
       scrollTop: $("#services-div").offset().top
     },
-    1500)
+    2500)
   });
   $("#contact-us").click(function(e) {
     e.preventDefault();
     $('html,body').animate({
       scrollTop: $("#contact-us-div").offset().top
     },
-    1500)
+    2500)
   });
   $( "#services-btn-dd").click(function(e) {
     e.preventDefault();
     $('html,body').animate({
       scrollTop: $("#services-div").offset().top
     },
-    1500)
+    2500)
   });
   $("#contact-us-dd").click(function(e) {
     e.preventDefault();
     $('html,body').animate({
       scrollTop: $("#contact-us-div").offset().top
     },
-    1500)
+    2500)
   });
   $(".logo-button").click(function(e) {
     e.preventDefault();
     $('html,body').animate({
       scrollTop: $("header").offset().top
     },
-    1500)
+    2500)
   });
 
   var product = $('.our-services').offset().top;
@@ -92,4 +92,5 @@ $(document).ready(function(){
       $('.contact-li').removeClass('active');
     };
   });
+
 });
