@@ -72,7 +72,7 @@ $("#services").click(function(e) {
                 var contact = $('.contact-us').offset().top;
 
                 $(window).on('scroll',function(){
-                  var stop = Math.round($(window).scrollTop()+1);
+                  var stop = Math.round($(window).scrollTop());
                   if (stop > product) {
                     $('.product-li').addClass('active');
                   } else {
@@ -81,8 +81,8 @@ $("#services").click(function(e) {
 
 
 
-                  if (stop > ((contact - product))) {
-                    $('.application-li').removeClass('active');
+                  if (stop > ((contact - product + 280))) {
+                    $('.product-li').removeClass('active');
                     $('.contact-li').addClass('active');
                   } else {
                     $('.contact-li').removeClass('active');
