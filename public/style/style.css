@@ -265,6 +265,7 @@ h2.services-header {
   background-size: cover;
   background-attachment: fixed;
   /*background-color: #E0E0E0;*/
+  box-shadow: 0px 0px 10px -1px;
   margin: 0 auto;
   padding-top: 5rem;
 }
